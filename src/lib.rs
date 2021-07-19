@@ -13,6 +13,8 @@ mod internal;
 pub mod key;
 pub mod mouse;
 pub mod screen;
+pub mod window;
+pub mod notify;
 
 extern crate image;
 extern crate libc;

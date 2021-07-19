@@ -5,9 +5,9 @@
 
 # AutoPilot
 
-AutoPilot is a Rust port of the Python C extension
-[AutoPy](http://autopy.org), a simple, cross-platform GUI automation library for
-Python. For more information, see the
+AutoPilot is a Rust port of the Python C extension [AutoPy](http://autopy.org),
+a simple, cross-platform GUI automation library for Python. For more
+information, see the
 [README](https://github.com/autopilot-rs/autopy#autopy-introduction-and-tutorial)
 on that repo.
 
@@ -28,7 +28,7 @@ fn sine_mouse_wave() {
     let scoped_height = screen_size.height / 2.0 - 10.0; // Stay in screen bounds.
     let mut rng = rand::thread_rng();
     for x in 0..screen_size.width as u64 {
-        let y = (scoped_height * ((TWO_PI * x as f64) / screen_size.width).sin() + 
+        let y = (scoped_height * ((TWO_PI * x as f64) / screen_size.width).sin() +
                  scoped_height).round();
         let duration: u64 = rng.gen_range(1, 3);
         autopilot::mouse::move_to(autopilot::geometry::Point::new(
@@ -58,7 +58,8 @@ If you are interested in this project, please consider contributing. Here are a
 few ways you can help:
 
 - [Report issues](https://github.com/autopilot-rs/autopilot-rs/issues).
-- Fix bugs and [submit pull requests](https://github.com/autopilot-rs/autopilot-rs/pulls).
+- Fix bugs and
+  [submit pull requests](https://github.com/autopilot-rs/autopilot-rs/pulls).
 - Write, clarify, or fix documentation.
 - Suggest or add new features.
 
