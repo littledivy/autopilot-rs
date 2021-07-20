@@ -381,6 +381,7 @@ impl From<KeyCode> for CGKeyCode {
             KeyCode::NumSubtract => 0x4E,
             KeyCode::NumAdd => 0x45,
             KeyCode::NumEnter => 0x4C,
+            _ => 0,
         }
     }
 }
