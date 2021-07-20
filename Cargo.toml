@@ -40,3 +40,5 @@ wmctrl =  { git = "https://github.com/Treborium/rust-wmctrl" }
 
 [target.'cfg(windows)'.dependencies]
 winapi = { version = "0.3.4", features = ["libloaderapi", "minwindef", "winbase", "winuser"] }
+winrt = {version = "0.5.0", features = ["windows-data", "windows-ui"]}
+
